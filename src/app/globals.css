@@ -9,6 +9,10 @@
   outline: none;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 @keyframes neonFlicker {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     opacity: 1;
