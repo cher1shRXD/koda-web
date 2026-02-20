@@ -63,7 +63,7 @@ export const ConnectionAnimation = () => {
                   stroke="currentColor"
                   strokeWidth="1.5"
                   fill="none"
-                  className="text-border/20"
+                  className="text-border"
                 />
                 <motion.path
                   d={`M ${xStart} ${yStart} C 450 ${yStart}, 550 ${yTarget}, ${xEnd} ${yTarget}`}

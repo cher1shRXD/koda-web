@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeSetter } from "@/shared/themes/ThemeSetter";
 import { LoadingBar } from "@cher1shrxd/loading";
 import AuthProvider from "../shared/providers/AuthProvider";
+import InitScrollProvider from "@/shared/providers/InitScrollProvider";
 
 export const metadata: Metadata = {
   title: "KODA | An AI-powered coding style analyzer",
@@ -22,6 +23,7 @@ export default function RootLayout({
       </head>
       <body className={`antialiased bg-background text-text`}>
         <LoadingBar color="var(--theme-color-primary)" />
+        <InitScrollProvider />
         <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
